@@ -6,15 +6,13 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { WhyVersaComponent } from './why-versa/why-versa.component';
-import { InvestmentStepsComponent } from './investment-steps/investment-steps.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     LandingPageComponent,
-    WhyVersaComponent,
-    InvestmentStepsComponent
+    WhyVersaComponent
   ],
   imports: [
     BrowserModule,
