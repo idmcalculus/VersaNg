@@ -7,6 +7,8 @@ import { HeaderComponent } from './header/header.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { WhyVersaComponent } from './why-versa/why-versa.component';
 import { InvestmentStepsComponent } from './investment-steps/investment-steps.component';
+import { VersaOffersComponent } from './versa-offers/versa-offers.component';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +16,8 @@ import { InvestmentStepsComponent } from './investment-steps/investment-steps.co
     HeaderComponent,
     LandingPageComponent,
     WhyVersaComponent,
-    InvestmentStepsComponent
+    InvestmentStepsComponent,
+    VersaOffersComponent
   ],
   imports: [
     BrowserModule,
