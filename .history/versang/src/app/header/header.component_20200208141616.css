@@ -1,0 +1,402 @@
+@keyframes stop {
+  0% {
+    opacity: 1;
+ }
+  20% {
+    opacity: 1;
+ }
+  40% {
+    opacity: 1;
+ }
+  60% {
+    opacity: 0.1;
+ }
+  80% {
+    opacity: 0.1;
+ }
+  100% {
+    opacity: 0.1;
+ }
+}
+@keyframes ready {
+  0% {
+    opacity: 0.1;
+ }
+  20% {
+    opacity: 0.1;
+ }
+  40% {
+    opacity: 1;
+ }
+  50% {
+    opacity: 0.1;
+ }
+  60% {
+    opacity: 0.1;
+ }
+  80% {
+    opacity: 0.1;
+ }
+  86% {
+    opacity: 1;
+ }
+  100% {
+    opacity: 1;
+ }
+}
+@keyframes go {
+  0% {
+    opacity: 0.1;
+ }
+  40% {
+    opacity: 0.1;
+ }
+  60% {
+    opacity: 1;
+ }
+  80% {
+    opacity: 1;
+ }
+  83% {
+    opacity: 0.1;
+ }
+  100% {
+    opacity: 0.1;
+ }
+}
+.header {
+  background: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  padding: 10px;
+  height: auto;
+  -webkit-transition: ease all 0.26s;
+  -moz-transition: ease all 0.26s;
+  -ms-transition: ease all 0.26s;
+  -o-transition: ease all 0.26s;
+  transition: ease all 0.26s;
+  -webkit-box-shadow: rgba(0, 0, 0, .2) 0 0 5px;
+  -moz-box-shadow: rgba(0, 0, 0, .2) 0 0 5px;
+  -o-box-shadow: rgba(0, 0, 0, .2) 0 0 5px;
+  box-shadow: rgba(0, 0, 0, .2) 0 0 5px;
+  animation: fadeInDown linear 0.9s;
+}
+.header nav {
+  clear: both;
+  position: relative;
+  margin: 0 30px;
+}
+.header nav .underline {
+  position: relative;
+  overflow: hidden;
+}
+.header nav .underline::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  width: 0;
+  bottom: 0;
+  background: #fff;
+  height: 1.3px;
+  transition-property: width;
+  transition: 0.3s ease-out;
+}
+.header nav .underline::after.active {
+  border-bottom: 2px solid #fff;
+}
+.header nav .underline:hover::after, .header nav .underline :focus::after, .header nav .underline :active::after {
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+.header nav .logo-brand {
+  margin: 0 20px 0;
+  display: inline-block;
+  background: url("https://versa.ng/assets/images/logblack-edit.png") no-repeat center;
+  background-size: contain;
+  width: 100%;
+  height: 50px;
+}
+.header nav .logo-brand a {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #4f5fbe;
+  letter-spacing: 1px;
+}
+.header nav .logo-brand a:hover {
+  text-decoration: none;
+}
+.header nav ul {
+  margin-right: 0;
+  padding-left: 0;
+  list-style: none;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.header nav li a {
+  float: left;
+  font-family: 'Nunito Sans', sans-serif !important;
+  text-decoration: none;
+  font-size: 0.91rem;
+  padding: 17px 20px;
+  margin-left: 2px;
+  letter-spacing: 1px;
+  position: relative;
+  color: #4f5fbe;
+  font-weight: lighter;
+}
+.header nav .login {
+  border-radius: 50px;
+  background: #fff;
+  padding: 10.5px 30px;
+  margin-right: 20px;
+  color: #4f5fbe;
+  box-shadow: none;
+}
+.header nav .login:hover {
+  box-shadow: none;
+}
+.header nav .sign-up {
+  border-radius: 50px;
+  background: #4f5fbe;
+  padding: 10.5px 30px;
+  color: #fff;
+  border: 1px solid #4f5fbe;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+.header nav .sign-up:hover {
+  -webkit-transition: ease all 0.26s;
+  -moz-transition: ease all 0.26s;
+  -ms-transition: ease all 0.26s;
+  -o-transition: ease all 0.26s;
+  transition: ease all 0.26s;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+.header nav .drop-down {
+  cursor: pointer;
+  display: block;
+}
+.header nav .drop-down:hover > .dropmenu, .header nav .drop-down:hover ul li {
+  display: block;
+  -webkit-transition: ease all 0.5s;
+  -moz-transition: ease all 0.5s;
+  -ms-transition: ease all 0.5s;
+  -o-transition: ease all 0.5s;
+  transition: ease all 0.5s;
+  animation: fadeIn 0.7s linear;
+}
+.header nav .dropmenu {
+  display: none;
+  position: absolute;
+  background: #000;
+  width: auto;
+  right: 17%;
+  text-align: center;
+  z-index: 1200;
+  top: 68%;
+}
+.header nav .dropmenu ul {
+  list-style: none;
+  padding-left: 0;
+  color: #fff;
+  display: block;
+  margin-right: 0;
+  min-width: 120px;
+}
+.header nav .dropmenu li a {
+  color: #fff;
+  padding: 12px 16px;
+  text-align: center;
+  letter-spacing: 0 !important;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid rgba(255, 255, 255, .2);
+  float: none;
+}
+.header nav .dropmenu li a:hover {
+  background: #000;
+}
+.header nav img {
+  width: 20px;
+  object-fit: contain;
+  height: 20px;
+  vertical-align: text-bottom;
+}
+.header.scrolled {
+  position: fixed;
+  background: #fff;
+  -webkit-transition: ease all 0.26s;
+  -moz-transition: ease all 0.26s;
+  -ms-transition: ease all 0.26s;
+  -o-transition: ease all 0.26s;
+  transition: ease all 0.26s;
+  -webkit-box-shadow: rgba(0, 0, 0, .2) 0 0 12px;
+  -moz-box-shadow: rgba(0, 0, 0, .2) 0 0 12px;
+  -o-box-shadow: rgba(0, 0, 0, .2) 0 0 12px;
+  box-shadow: rgba(0, 0, 0, .2) 0 0 12px;
+  animation: fadeInDown linear 0.9s;
+  z-index: 9999;
+  top: 0;
+  padding: 10px 20px;
+}
+.header.scrolled nav {
+  clear: both;
+  position: relative;
+  margin: 0 30px;
+}
+.header.scrolled nav .underline {
+  position: relative;
+  overflow: hidden;
+}
+.header.scrolled nav .underline::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  width: 0;
+  bottom: 0;
+  background: #fff;
+  height: 1.3px;
+  transition-property: width;
+  transition: 0.3s ease-out;
+}
+.header.scrolled nav .underline::after.active {
+  border-bottom: 2px solid #fff;
+}
+.header.scrolled nav .underline:hover::after, .header.scrolled nav .underline :focus::after, .header.scrolled nav .underline :active::after {
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+.header.scrolled nav .logo-brand {
+  margin: 0 20px 0;
+  display: inline-block;
+  background: url("https://versa.ng/assets/images/logblack-edit.png") no-repeat center;
+  background-size: contain;
+  width: 100%;
+  height: 50px;
+}
+.header.scrolled nav .logo-brand a {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #4f5fbe;
+  letter-spacing: 1px;
+}
+.header.scrolled nav .logo-brand a:hover {
+  text-decoration: none;
+}
+.header.scrolled nav ul {
+  margin-right: 0;
+  padding-left: 0;
+  list-style: none;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+}
+.header.scrolled nav li a {
+  float: left;
+  font-family: 'Nunito Sans', sans-serif !important;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 17px 20px;
+  margin-left: 2px;
+  letter-spacing: 1px;
+  position: relative;
+  color: #4f5fbe;
+  font-weight: lighter;
+}
+.header.scrolled nav .login {
+  border-radius: 0;
+  background: transparent;
+  padding: 16.5px 30px;
+  margin-right: 20px;
+  color: #4f5fbe;
+  border: 1px solid #4f5fbe;
+  box-shadow: 2px 0 4px rgba(0, 0, 0, .2);
+}
+.header.scrolled nav .sign-up {
+  border-radius: 0;
+  background: #4f5fbe;
+  padding: 17px 30px;
+  color: #fff;
+  border: 1px solid #4f5fbe;
+}
+.header.scrolled nav .drop-down {
+  cursor: pointer;
+  display: block;
+}
+.header.scrolled nav .drop-down:hover > .dropmenu, .header.scrolled nav .drop-down:hover ul li {
+  display: block;
+  -webkit-transition: ease all 0.5s;
+  -moz-transition: ease all 0.5s;
+  -ms-transition: ease all 0.5s;
+  -o-transition: ease all 0.5s;
+  transition: ease all 0.5s;
+  animation: fadeIn 0.7s linear;
+}
+.header.scrolled nav .dropmenu {
+  display: none;
+  position: absolute;
+  background: #000;
+  width: auto;
+  right: 17%;
+  text-align: center;
+  z-index: 1200;
+  top: 68%;
+}
+.header.scrolled nav .dropmenu ul {
+  list-style: none;
+  padding-left: 0;
+  color: #fff;
+  display: block;
+  margin-right: 0;
+  min-width: 120px;
+}
+.header.scrolled nav .dropmenu li a {
+  color: #fff;
+  padding: 12px 16px;
+  text-align: center;
+  letter-spacing: 0 !important;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid rgba(255, 255, 255, .2);
+  float: none;
+}
+.header.scrolled nav .dropmenu li a:hover {
+  background: #000;
+}
+.header.scrolled nav img {
+  width: 20px;
+  object-fit: contain;
+  height: 20px;
+  vertical-align: text-bottom;
+}
+.tran {
+  background: transparent !important;
+}
+#icon-top {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 99;
+  border: none;
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+  outline: none;
+  background-color: #fff;
+  cursor: pointer;
+  padding: 15px;
+  box-shadow: rgba(0, 0, 0, .3) -3px 3px 6px;
+}

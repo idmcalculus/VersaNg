@@ -1,0 +1,199 @@
+@keyframes stop {
+  0% {
+    opacity: 1;
+ }
+  20% {
+    opacity: 1;
+ }
+  40% {
+    opacity: 1;
+ }
+  60% {
+    opacity: 0.1;
+ }
+  80% {
+    opacity: 0.1;
+ }
+  100% {
+    opacity: 0.1;
+ }
+}
+@keyframes ready {
+  0% {
+    opacity: 0.1;
+ }
+  20% {
+    opacity: 0.1;
+ }
+  40% {
+    opacity: 1;
+ }
+  50% {
+    opacity: 0.1;
+ }
+  60% {
+    opacity: 0.1;
+ }
+  80% {
+    opacity: 0.1;
+ }
+  86% {
+    opacity: 1;
+ }
+  100% {
+    opacity: 1;
+ }
+}
+@keyframes go {
+  0% {
+    opacity: 0.1;
+ }
+  40% {
+    opacity: 0.1;
+ }
+  60% {
+    opacity: 1;
+ }
+  80% {
+    opacity: 1;
+ }
+  83% {
+    opacity: 0.1;
+ }
+  100% {
+    opacity: 0.1;
+ }
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Nunito Sans', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+}
+.wow {
+  visibility: hidden;
+}
+.m-0-30, .ourServices .inner-ourServices, .superbOffers .inner-superb {
+  margin: 0 50px;
+}
+section {
+  width: 100%;
+  position: relative;
+}
+@media (min-width: 992px) {
+  .mobile-nav {
+    display: none;
+ }
+  .header.scrolled .mobile-nav {
+    display: none;
+ }
+}
+
+
+.workingSection {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  align-items: center;
+  background: #fff;
+  height: auto;
+  position: relative;
+}
+.workingSection .inner-workingSection {
+  margin: 0 5px;
+  padding: 2em 50px 0;
+}
+.workingSection .inner-workingSection .working-content {
+  padding: 4rem 2em;
+}
+.workingSection .inner-workingSection .working-content h3 {
+  font-size: 2.93rem;
+  font-weight: bold;
+  color: #1d1d20;
+}
+.workingSection .inner-workingSection .working-content article {
+  color: #1d1d20;
+  line-height: 1.7;
+  font-size: 1.1rem;
+  font-weight: lighter;
+  padding: 2rem 0 0 0;
+}
+.workingSection .inner-workingSection .working-content .btn-holder {
+  margin-top: 3em;
+}
+.workingSection .inner-workingSection .working-content .btn-holder .btn {
+  border-radius: 50px;
+  outline: 0;
+  border: none;
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
+  -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
+  -o-box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
+}
+.workingSection .inner-workingSection .working-content .btn-holder .btn:hover {
+  transform: translateY(-5%);
+  box-shadow: 0 5px 14px rgba(0, 0, 0, .2);
+  -webkit-transition: ease all 0.7s;
+  -moz-transition: ease all 0.7s;
+  -ms-transition: ease all 0.7s;
+  -o-transition: ease all 0.7s;
+  transition: ease all 0.7s;
+}
+.workingSection .inner-workingSection .working-content .btn-holder .btn-invest {
+  padding: 0.61em 2.3em;
+  width: 26%;
+  height: 45px;
+  background: #4f5fbe;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.workingSection .inner-workingSection .working-content .btn-holder .btn-invest2 {
+  padding: 0.61em 2em !important;
+  height: 45px;
+  background: #4f5fbe;
+  color: #fff !important;
+  font-size: 1rem !important;
+  font-weight: lighter !important;
+}
+.workingSection .inner-workingSection .working-content .btn-holder .btn-investment, .workingSection .inner-workingSection .working-content .btn-holder .landing .inner-landing .get-started .btn-work-green, .landing .inner-landing .get-started .workingSection .inner-workingSection .working-content .btn-holder .btn-work-green, .workingSection .inner-workingSection .working-content .btn-holder .ourServices .get-started .btn-work-green, .ourServices .get-started .workingSection .inner-workingSection .working-content .btn-holder .btn-work-green, .workingSection .inner-workingSection .working-content .btn-holder .superbOffers .btn-work-green, .superbOffers .workingSection .inner-workingSection .working-content .btn-holder .btn-work-green, .workingSection .inner-workingSection .working-content .btn-holder .btn-work-green {
+  border-radius: 50px !important;
+  padding: 0.41em 1em;
+  background: #4f5fbe;
+  color: #fff;
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.workingSection .inner-workingSection .working-content .btn-holder .btn-work-green {
+  background: #26e8ad;
+  color: #fff;
+}
+.workingSection .inner-workingSection .working-content .btn-holder .btn-superb {
+  padding: 0.61em 2em;
+  background: #fff;
+  color: #4f5fbe;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.workingSection .inner-workingSection .working-content .btn-holder .btn-sub-f {
+  background: #000;
+  color: #fff;
+}
+.workingSection .inner-workingSection .circle-section {
+  width: 350px;
+  animation: bounce 5s linear 10s infinite !important;
+}
+.workingSection .hidingImage {
+  background: url("https://versa.ng/partner-row2-3.7f2485bd54afc0c25394.png") no-repeat -100% 522%;
+}

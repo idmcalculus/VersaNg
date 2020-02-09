@@ -1,0 +1,147 @@
+@keyframes stop {
+  0% {
+    opacity: 1;
+ }
+  20% {
+    opacity: 1;
+ }
+  40% {
+    opacity: 1;
+ }
+  60% {
+    opacity: 0.1;
+ }
+  80% {
+    opacity: 0.1;
+ }
+  100% {
+    opacity: 0.1;
+ }
+}
+@keyframes ready {
+  0% {
+    opacity: 0.1;
+ }
+  20% {
+    opacity: 0.1;
+ }
+  40% {
+    opacity: 1;
+ }
+  50% {
+    opacity: 0.1;
+ }
+  60% {
+    opacity: 0.1;
+ }
+  80% {
+    opacity: 0.1;
+ }
+  86% {
+    opacity: 1;
+ }
+  100% {
+    opacity: 1;
+ }
+}
+@keyframes go {
+  0% {
+    opacity: 0.1;
+ }
+  40% {
+    opacity: 0.1;
+ }
+  60% {
+    opacity: 1;
+ }
+  80% {
+    opacity: 1;
+ }
+  83% {
+    opacity: 0.1;
+ }
+  100% {
+    opacity: 0.1;
+ }
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Nunito Sans', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+}
+.wow {
+  visibility: hidden;
+}
+.m-0-30, .ourServices .inner-ourServices, .superbOffers .inner-superb {
+  margin: 0 50px;
+}
+section {
+  width: 100%;
+  position: relative;
+}
+@media (min-width: 992px) {
+  .mobile-nav {
+    display: none;
+ }
+  .header.scrolled .mobile-nav {
+    display: none;
+ }
+}
+
+.step-investment {
+  background: #4f5fbe;
+  padding: 0 4rem 3em;
+}
+.step-investment .row {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row;
+}
+.step-investment .row .media {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row;
+}
+.step-investment .row .media media-body {
+  display: flex;
+  align-self: center;
+}
+.step-investment .step-image {
+  background: url("https://versa.ng/assets/images/presentation.png") no-repeat 8px 110%;
+  background-size: contain;
+}
+/*.step-investment .step-image img {
+  width: 100%;
+  object-position: center;
+  object-fit: contain;
+}*/
+.step-investment .list-plan {
+  color: #fff;
+  margin-top: 5rem;
+}
+.step-investment .list-plan h3 {
+  color: #fff;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+.step-investment .list-plan h5 {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+.step-investment .list-plan .media-body {
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+.step-investment .list-plan span {
+  color: #4f5fbe;
+}
