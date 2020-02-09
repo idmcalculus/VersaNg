@@ -1,0 +1,403 @@
+body {
+  font-size: .9375rem;
+  overflow-x: hidden;
+  color: #333;
+  font-family: open sans, sans-serif;
+  /*background-image: linear-gradient(rgba(255, 255, 255, 0.7) 240px, #f2f7fb 0%)*/
+}
+
+@keyframes stop {
+  0% {
+    opacity: 1;
+ }
+  20% {
+    opacity: 1;
+ }
+  40% {
+    opacity: 1;
+ }
+  60% {
+    opacity: 0.1;
+ }
+  80% {
+    opacity: 0.1;
+ }
+  100% {
+    opacity: 0.1;
+ }
+}
+@keyframes ready {
+  0% {
+    opacity: 0.1;
+ }
+  20% {
+    opacity: 0.1;
+ }
+  40% {
+    opacity: 1;
+ }
+  50% {
+    opacity: 0.1;
+ }
+  60% {
+    opacity: 0.1;
+ }
+  80% {
+    opacity: 0.1;
+ }
+  86% {
+    opacity: 1;
+ }
+  100% {
+    opacity: 1;
+ }
+}
+@keyframes go {
+  0% {
+    opacity: 0.1;
+ }
+  40% {
+    opacity: 0.1;
+ }
+  60% {
+    opacity: 1;
+ }
+  80% {
+    opacity: 1;
+ }
+  83% {
+    opacity: 0.1;
+ }
+  100% {
+    opacity: 0.1;
+ }
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Nunito Sans', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+}
+.wow {
+  visibility: hidden;
+}
+.m-0-30, .ourServices .inner-ourServices, .superbOffers .inner-superb {
+  margin: 0 50px;
+}
+section {
+  width: 100%;
+  position: relative;
+}
+@media (min-width: 992px) {
+  .mobile-nav {
+    display: none;
+ }
+  .header.scrolled .mobile-nav {
+    display: none;
+ }
+}
+.land-overlay {
+  position: absolute;
+  opacity: 0.3;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  content: "";
+  background: #000;
+}
+.landing {
+  background: #fff;
+  width: 100%;
+  height: 80%;
+  position: relative;
+}
+.landing .col-md-5 {
+  display: flex;
+  min-width: 50%;
+  margin-left: -5%;
+}
+.landing .inner-landing {
+  padding: 4.5rem 3.5rem 2em;
+}
+.landing .inner-landing .row {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row nowrap;
+}
+.landing .inner-landing h2 {
+  font-size: 3.2rem;
+  color: #4f5fbe;
+  font-weight: bold;
+  line-height: 1.25;
+}
+.landing .inner-landing span {
+  color: #707070;
+}
+.landing .inner-landing .lower-content {
+  margin-top: 2em;
+  color: #707070;
+  font-size: 1rem;
+  line-height: 35px;
+  word-break: break-all;
+  font-weight: lighter;
+  padding: 0;
+}
+.landing .inner-landing .get-started {
+  margin-top: 4em;
+}
+.landing .inner-landing .get-started .btn {
+  border-radius: 50px;
+  outline: 0;
+  border: none;
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
+  -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
+  -o-box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
+}
+.landing .inner-landing .get-started .btn:hover {
+  transform: translateY(-5%);
+  box-shadow: 0 5px 14px rgba(0, 0, 0, .2);
+  -webkit-transition: ease all 0.7s;
+  -moz-transition: ease all 0.7s;
+  -ms-transition: ease all 0.7s;
+  -o-transition: ease all 0.7s;
+  transition: ease all 0.7s;
+}
+.landing .inner-landing .get-started .btn-invest {
+  padding: 0.61em 2.3em;
+  width: 26%;
+  height: 45px;
+  background: #4f5fbe;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.landing .inner-landing .get-started .btn-invest2 {
+  padding: 0.61em 2em !important;
+  height: 45px;
+  background: #4f5fbe;
+  color: #fff !important;
+  font-size: 1rem !important;
+  font-weight: lighter !important;
+}
+.landing .inner-landing .get-started .btn-investment, .landing .inner-landing .get-started .btn-work-green, .landing .inner-landing .get-started .ourServices .get-started .btn-work-green, .ourServices .get-started .landing .inner-landing .get-started .btn-work-green, .landing .inner-landing .get-started .superbOffers .btn-work-green, .superbOffers .landing .inner-landing .get-started .btn-work-green, .landing .inner-landing .get-started .workingSection .inner-workingSection .working-content .btn-holder .btn-work-green, .workingSection .inner-workingSection .working-content .btn-holder .landing .inner-landing .get-started .btn-work-green {
+  border-radius: 50px !important;
+  padding: 0.41em 1em;
+  background: #4f5fbe;
+  color: #fff;
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.landing .inner-landing .get-started .btn-work-green {
+  background: #26e8ad;
+  color: #fff;
+}
+.landing .inner-landing .get-started .btn-superb {
+  padding: 0.61em 2em;
+  background: #fff;
+  color: #4f5fbe;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.landing .inner-landing .get-started .btn-sub-f {
+  background: #000;
+  color: #fff;
+}
+.landing .inner-landing .row .circle {
+  width: 60%;
+  height: 100%;
+  background: url("https://versa.ng/rename.9b2e219a43fea0e79926.svg") no-repeat right !important;
+  background-size: contain;
+  margin-top: 20%;
+}
+.landing .inner-landing .row .circle:hover {
+  transform: translateY(-5px);
+  -webkit-transition: ease all 0.5s;
+  -moz-transition: ease all 0.5s;
+  -ms-transition: ease all 0.5s;
+  -o-transition: ease all 0.5s;
+  transition: ease all 0.5s;
+}
+.landing .inner-landing .row .circle2 {
+  width: 100%;
+  height: 100%;
+  background: url("https://versa.ng/mobile.14a5961867e7a0d383e4.svg") no-repeat right !important;
+  background-size: contain;
+}
+.landing .inner-landing .row .circle2:hover {
+  transform: translateY(-5px);
+  -webkit-transition: ease all 0.5s;
+  -moz-transition: ease all 0.5s;
+  -ms-transition: ease all 0.5s;
+  -o-transition: ease all 0.5s;
+  transition: ease all 0.5s;
+}
+.section-container {
+  padding: 10px 20px 0;
+  background: rgba(5, 3, 51, .3);
+}
+.title-head {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+  text-transform: capitalize;
+}
+.f-13 {
+  font-size: 1em !important;
+}
+
+/*
+.ourServices {
+  background: #fff;
+  height: 100%;
+}
+.ourServices .inner-ourServices {
+  margin: 2em 100px;
+}
+.ourServices .inner-ourServices h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #555;
+  line-height: 30px;
+}
+.ourServices .inner-ourServices h5 {
+  color: #000;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.ourServices .inner-ourServices h4 {
+  color: #333;
+  font-size: 1.2rem;
+  line-height: 30px;
+  margin-top: 2em;
+  font-weight: bold;
+  word-break: break-word;
+  position: relative;
+  padding-left: 2rem;
+}
+.ourServices .inner-ourServices h4:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 3px;
+  background: #4f5fbe;
+  left: 0;
+  top: 0;
+  border-radius: 3px;
+}
+.ourServices .holder-container {
+  height: 400px;
+  border-radius: 7px;
+  padding: 15px;
+}
+.ourServices .holder-container .img-holder {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  background: #f7f7f7;
+  margin: 10px auto 10px;
+}
+.ourServices .holder-container .content-holder {
+  margin-top: 15px;
+}
+.ourServices .holder-container .content-holder h3 {
+  font-weight: bold;
+}
+.ourServices .holder-container .content-holder span {
+  color: #888;
+}
+.ourServices .holder-container.effect {
+  height: 500px;
+}
+.ourServices .holder-container:hover {
+  box-shadow: 0 5px 14px rgba(0, 0, 0, .2);
+  -webkit-transition: ease all 0.7s;
+  -moz-transition: ease all 0.7s;
+  -ms-transition: ease all 0.7s;
+  -o-transition: ease all 0.7s;
+  transition: ease all 0.7s;
+}
+.ourServices span {
+  color: #555;
+  text-align: center;
+  line-height: 25px;
+}
+.ourServices .get-started {
+  margin-top: 4em;
+}
+.ourServices .get-started .btn {
+  border-radius: 50px;
+  outline: 0;
+  border: none;
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
+  -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
+  -o-box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
+}
+.ourServices .get-started .btn:hover {
+  transform: translateY(-5%);
+  box-shadow: 0 5px 14px rgba(0, 0, 0, .2);
+  -webkit-transition: ease all 0.7s;
+  -moz-transition: ease all 0.7s;
+  -ms-transition: ease all 0.7s;
+  -o-transition: ease all 0.7s;
+  transition: ease all 0.7s;
+}
+.ourServices .get-started .btn-invest {
+  padding: 0.61em 2.3em;
+  width: 26%;
+  height: 45px;
+  background: #4f5fbe;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.ourServices .get-started .btn-invest2 {
+  padding: 0.61em 2em !important;
+  height: 45px;
+  background: #4f5fbe;
+  color: #fff !important;
+  font-size: 1rem !important;
+  font-weight: lighter !important;
+}
+.ourServices .get-started .btn-investment, .ourServices .get-started .landing .inner-landing .get-started .btn-work-green, .landing .inner-landing .get-started .ourServices .get-started .btn-work-green, .ourServices .get-started .btn-work-green, .ourServices .get-started .superbOffers .btn-work-green, .superbOffers .ourServices .get-started .btn-work-green, .ourServices .get-started .workingSection .inner-workingSection .working-content .btn-holder .btn-work-green, .workingSection .inner-workingSection .working-content .btn-holder .ourServices .get-started .btn-work-green {
+  border-radius: 50px !important;
+  padding: 0.41em 1em;
+  background: #4f5fbe;
+  color: #fff;
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.ourServices .get-started .btn-work-green {
+  background: #26e8ad;
+  color: #fff;
+}
+.ourServices .get-started .btn-superb {
+  padding: 0.61em 2em;
+  background: #fff;
+  color: #4f5fbe;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.ourServices .get-started .btn-sub-f {
+  background: #000;
+  color: #fff;
+}
+*/
+
