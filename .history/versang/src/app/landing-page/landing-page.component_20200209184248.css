@@ -96,14 +96,6 @@ section {
   width: 100%;
   position: relative;
 }
-@media (min-width: 768px) {
-.col-md-5 {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 41.666667%;
-    flex: 0 0 41.666667%;
-    max-width: 41.666667%;
-}
-}
 @media (min-width: 992px) {
   .mobile-nav {
     display: none;
@@ -127,11 +119,6 @@ section {
   width: 100%;
   height: 80%;
   position: relative;
-}
-.landing .col-md-5 {
-  display: flex;
-  min-width: 50%;
-  margin-left: -5%;
 }
 .landing .inner-landing {
   padding: 4.5rem 3.5rem 2em;
@@ -223,14 +210,13 @@ section {
   background: #000;
   color: #fff;
 }
-.landing .inner-landing .row .circle {
-  width: 60%;
+.landing .circle {
+  width: 100%;
   height: 100%;
   background: url("https://versa.ng/rename.9b2e219a43fea0e79926.svg") no-repeat right;
   background-size: contain;
-  margin-top: 20%;
 }
-.landing .inner-landing .row .circle:hover {
+.landing .circle:hover {
   transform: translateY(-5px);
   -webkit-transition: ease all 0.5s;
   -moz-transition: ease all 0.5s;
@@ -238,14 +224,13 @@ section {
   -o-transition: ease all 0.5s;
   transition: ease all 0.5s;
 }
-.landing .inner-landing .row .circle2 {
-  width: 60%;
-  height: 70%;
-  margin: 5% -10% -10%;
+.landing .circle2 {
+  width: 100%;
+  height: 100%;
   background: url("https://versa.ng/mobile.14a5961867e7a0d383e4.svg") no-repeat right;
   background-size: contain;
 }
-.landing .inner-landing .row .circle2:hover {
+.landing .circle2:hover {
   transform: translateY(-5px);
   -webkit-transition: ease all 0.5s;
   -moz-transition: ease all 0.5s;
@@ -268,7 +253,7 @@ section {
   font-size: 1em !important;
 }
 
-/*
+
 .ourServices {
   background: #fff;
   height: 100%;
@@ -408,5 +393,5 @@ section {
   background: #000;
   color: #fff;
 }
-*/
+
 
