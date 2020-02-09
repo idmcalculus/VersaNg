@@ -9,6 +9,7 @@ import { WhyVersaComponent } from './why-versa/why-versa.component';
 import { InvestmentStepsComponent } from './investment-steps/investment-steps.component';
 import { VersaOffersComponent } from './versa-offers/versa-offers.component';
 import { JoinVersaComponent } from './join-versa/join-versa.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { JoinVersaComponent } from './join-versa/join-versa.component';
     WhyVersaComponent,
     InvestmentStepsComponent,
     VersaOffersComponent,
-    JoinVersaComponent
+    JoinVersaComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
