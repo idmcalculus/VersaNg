@@ -1,0 +1,505 @@
+body {
+  font-size: .9375rem;
+  overflow-x: hidden;
+  color: #333;
+  font-family: open sans, sans-serif;
+  /*background-image: linear-gradient(rgba(255, 255, 255, 0.7) 240px, #f2f7fb 0%)*/
+}
+
+/*background: $theme-white;
+*/
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  padding: 10px;
+  height: auto;
+ /*@include transition(ease, 0.26s);
+  @include boxShadow($shadowBlack, 0, 0, 5px);
+ */
+  animation: fadeInDown linear 0.9s;
+}
+.header nav {
+  clear: both;
+  position: relative;
+  margin: 0 30px;
+}
+.header nav .underline {
+  position: relative;
+  overflow: hidden;
+}
+.header nav .underline::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  width: 0;
+  bottom: 0;
+ /*background: $theme-white;
+ */
+  height: 1.3px;
+  transition-property: width;
+  transition: 0.3s ease-out;
+}
+.header nav .underline::after.active {
+  border-bottom: 2px solid white;
+}
+.header nav .underline:hover::after, .header nav .underline :focus::after, .header nav .underline :active::after {
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+.header nav .logo-brand {
+  margin: 0 20px 0;
+  display: inline-block;
+  background: url("../images/logblack-edit.png") no-repeat center;
+  background-size: contain;
+  width: 100%;
+  height: 50px;
+}
+.header nav .logo-brand a {
+  font-size: 3rem;
+  font-weight: bold;
+  color: blue;
+  letter-spacing: 1px;
+}
+.header nav .logo-brand a:hover {
+  text-decoration: none;
+}
+.header nav ul {
+  margin-right: 0;
+  padding-left: 0;
+  list-style: none;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.header nav li a {
+  float: left;
+ /*@include Nunito-Sans();
+ */
+  text-decoration: none;
+  font-size: 0.91rem;
+  padding: 17px 20px;
+  margin-left: 2px;
+  letter-spacing: 1px;
+  position: relative;
+  color: blue;
+  font-weight: lighter;
+}
+.header nav .login {
+  border-radius: 50px;
+  background: white;
+  padding: 10.5px 30px;
+  margin-right: 20px;
+  color: blue;
+  box-shadow: none;
+}
+.header nav .login:hover {
+  box-shadow: none;
+}
+.header nav .sign-up {
+  border-radius: 50px;
+  background: blue;
+  padding: 10.5px 30px;
+  color: white;
+ /*@include borderLine(1px, $theme-blue);
+  @include boxShadow(0,2px, 2px, rgba(0,0,0,0.3));
+  &:hover {
+    @include transition(ease, 0.26s);
+    @include noBoxShadow(none);
+ }
+ */
+}
+.header nav .drop-down {
+  cursor: pointer;
+  display: block;
+}
+.header nav .drop-down:hover > .dropmenu, .header nav .drop-down:hover ul li {
+  display: block;
+ /*@include transition(ease, 0.5s);
+ */
+  animation: fadeIn 0.7s linear;
+}
+.header nav .dropmenu {
+  display: none;
+  position: absolute;
+  background: black;
+  width: auto;
+  right: 17%;
+  text-align: center;
+  z-index: 1200;
+  top: 68%;
+}
+.header nav .dropmenu ul {
+  list-style: none;
+  padding-left: 0;
+  color: white;
+  display: block;
+  margin-right: 0;
+  min-width: 120px;
+}
+.header nav .dropmenu li a {
+  color: white;
+  padding: 12px 16px;
+  text-align: center;
+  letter-spacing: 0 !important;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid rgba(255, 255, 255, .2);
+  float: none;
+}
+.header nav .dropmenu li a:hover {
+  background: black;
+}
+.header nav img {
+  width: 20px;
+  object-fit: contain;
+  height: 20px;
+  vertical-align: text-bottom;
+}
+.header.scrolled {
+  position: fixed;
+  background: white;
+ /*@include transition(ease, 0.26s);
+  @include boxShadow(Black, 0, 0, 12px);
+ */
+  animation: fadeInDown linear 0.9s;
+  z-index: 9999;
+  top: 0;
+  padding: 10px 20px;
+}
+.header.scrolled nav {
+  clear: both;
+  position: relative;
+  margin: 0 30px;
+}
+.header.scrolled nav .underline {
+  position: relative;
+  overflow: hidden;
+}
+.header.scrolled nav .underline::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  width: 0;
+  bottom: 0;
+  background: white;
+  height: 1.3px;
+  transition-property: width;
+  transition: 0.3s ease-out;
+}
+.header.scrolled nav .underline::after.active {
+  border-bottom: 2px solid white;
+}
+.header.scrolled nav .underline:hover::after, .header.scrolled nav .underline :focus::after, .header.scrolled nav .underline :active::after {
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+.header.scrolled nav .logo-brand {
+  margin: 0 20px 0;
+  display: inline-block;
+  background: url("../images/logblack-edit.png") no-repeat center;
+  background-size: contain;
+  width: 100%;
+  height: 50px;
+}
+.header.scrolled nav .logo-brand a {
+  font-size: 3rem;
+  font-weight: bold;
+  color: blue;
+  letter-spacing: 1px;
+}
+.header.scrolled nav .logo-brand a:hover {
+  text-decoration: none;
+}
+.header.scrolled nav ul {
+  margin-right: 0;
+  padding-left: 0;
+  list-style: none;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+}
+.header.scrolled nav li a {
+  float: left;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 17px 20px;
+  margin-left: 2px;
+  letter-spacing: 1px;
+  position: relative;
+  color: blue;
+  font-weight: lighter;
+}
+.header.scrolled nav .login {
+  border-radius: 0;
+  background: transparent;
+  padding: 16.5px 30px;
+  margin-right: 20px;
+  color: blue;
+  box-shadow: 2px 0 4px rgba(0, 0, 0, .2);
+}
+.header.scrolled nav .sign-up {
+  border-radius: 0;
+  background: blue;
+  padding: 17px 30px;
+  color: white;
+}
+.header.scrolled nav .drop-down {
+  cursor: pointer;
+  display: block;
+}
+.header.scrolled nav .drop-down:hover > .dropmenu, .header.scrolled nav .drop-down:hover ul li {
+  display: block;
+  animation: fadeIn 0.7s linear;
+}
+.header.scrolled nav .dropmenu {
+  display: none;
+  position: absolute;
+  background: black;
+  width: auto;
+  right: 17%;
+  text-align: center;
+  z-index: 1200;
+  top: 68%;
+}
+.header.scrolled nav .dropmenu ul {
+  list-style: none;
+  padding-left: 0;
+  color: white;
+  display: block;
+  margin-right: 0;
+  min-width: 120px;
+}
+.header.scrolled nav .dropmenu li a {
+  color: white;
+  padding: 12px 16px;
+  text-align: center;
+  letter-spacing: 0 !important;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid rgba(255, 255, 255, .2);
+  float: none;
+}
+.header.scrolled nav .dropmenu li a:hover {
+  background: black;
+}
+.header.scrolled nav img {
+  width: 20px;
+  object-fit: contain;
+  height: 20px;
+  vertical-align: text-bottom;
+}
+.tran {
+  background: transparent !important;
+}
+#icon-top {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 99;
+  border: none;
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+  outline: none;
+  background-color: #fff;
+  cursor: pointer;
+  padding: 15px;
+  box-shadow: rgba(0, 0, 0, .3) -3px 3px 6px;
+}
+.footer {
+  height: auto;
+  clear: both;
+  width: 100%;
+  background: blue;
+  padding: 3em 3em 0;
+}
+@media (min-width: 768px) {
+  .footer .col-md-1 {
+    -ms-flex: 0 0 12.333333% !important;
+    flex: 0 0 12.333333% !important;
+    max-width: 12.333333% !important;
+ }
+}
+.footer .inner-footer {
+  padding: 25px 50px;
+  margin: 0;
+  color: white;
+}
+.footer .inner-footer h3 {
+  text-align: left;
+  font-size: 1em;
+  color: white;
+  font-weight: bold;
+  position: relative;
+}
+.footer .inner-footer h3:after {
+  width: 20%;
+  content: '';
+  position: absolute;
+  background: white;
+  height: 1px;
+  left: 0;
+  bottom: -1px;
+}
+.footer .inner-footer h6 {
+  text-align: left;
+  font-size: 1em;
+  color: white;
+  font-weight: bold;
+  position: relative;
+}
+.footer .inner-footer h6:after {
+  width: 32%;
+  content: '';
+  position: absolute;
+  background: white;
+  height: 1px;
+  left: 0;
+  bottom: -1px;
+}
+.footer .inner-footer h5 {
+  text-align: left;
+  font-size: 1em;
+  color: white;
+  font-weight: bold;
+  position: relative;
+}
+.footer .inner-footer h5:after {
+  width: 47%;
+  content: '';
+  position: absolute;
+  background: white;
+  height: 1px;
+  left: 0;
+  bottom: -1px;
+}
+.footer .inner-footer ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+.footer .inner-footer li a {
+  float: none;
+  display: block;
+  color: white !important;
+  text-align: left;
+  font-size: 0.9em;
+  padding: 6px 0;
+  font-weight: lighter;
+}
+.footer .inner-footer li a:hover {
+  color: black !important;
+}
+.footer .inner-footer .subscribe small {
+  color: #333;
+  font-weight: lighter;
+}
+.footer .inner-footer .subscribe .form-inline-sub {
+  display: -webkit-box;
+  margin-top: 15px;
+}
+.footer .inner-footer .subscribe .form-inline-sub .form-control {
+  background: transparent;
+  border-radius: 0;
+  color: blue;
+  font-size: 0.91rem;
+  outline: none;
+  padding: 0.375rem 0.51rem;
+  width: 100% !important;
+  height: calc(2.5em + 10px);
+  border: 0;
+  border-bottom: 1px solid blue;
+}
+.footer .inner-footer .subscribe .form-inline-sub .form-control::placeholder {
+  color: blue;
+  font-weight: lighter;
+}
+.footer .inner-footer .subscribe .form-inline-sub .form-control:focus {
+  background: white;
+  border-bottom: 1px solid blue;
+  color: blue;
+  font-size: 1rem;
+  outline: 0;
+}
+.footer .inner-footer .subscribe .form-inline-sub .btn-send {
+  border-radius: 0;
+  background: transparent;
+  border: 0;
+}
+.footer .inner-footer .subscribe .form-inline-sub .input-group-prepend {
+  background: transparent;
+}
+.footer .inner-footer .subscribe .form-inline-sub .input-group-text {
+  border: 0;
+  border-bottom: 1px solid blue;
+}
+.footer .inner-footer .subscribe .form-inline-sub .btn-sub-f {
+  overflow: hidden;
+  color: #555;
+  border: none;
+}
+.footer .inner-footer .subscribe .form-inline-sub .btn-sub-f:hover {
+  color: black;
+  font-weight: 600;
+}
+.footer .inner-footer .social-actions {
+  padding: 0 10px 0;
+}
+.footer .inner-footer .social-actions li a {
+  display: flex;
+  float: left;
+  font-size: 1.1rem;
+  padding: 8px 11px;
+  margin: 0 10px 0 0;
+  font-weight: bold;
+}
+.footer .inner-footer .social-actions li a:first-child {
+  padding-left: 0;
+}
+.footer .inner-footer .social-actions li a:hover {
+  color: blue;
+  border: none;
+}
+.footer .inner-footer .social-actions li a:hover span {
+  opacity: 1;
+  font-weight: bold;
+  padding-left: 15px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.footer .footer-last {
+  border-top: 1px solid white;
+  font-size: 0.8em;
+  color: white;
+  padding: 15px 0;
+  width: 88%;
+  margin: 2em 43px 0;
+}
+.footer .footer-last ul {
+  list-style: none;
+}
+.footer .footer-last li a {
+  float: left;
+  color: white;
+  padding: 0 35px;
+  position: relative;
+}
+.footer .footer-last li a:after {
+  position: absolute;
+  content: '|';
+  padding-left: 14px;
+}
+.footer .footer-last li a:after:last-child {
+  content: "";
+}
+.footer .footer-last li a:first-child {
+  padding-left: 0;
+}

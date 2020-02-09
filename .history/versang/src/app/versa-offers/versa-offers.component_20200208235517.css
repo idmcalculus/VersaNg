@@ -1,0 +1,297 @@
+@keyframes stop {
+  0% {
+    opacity: 1;
+ }
+  20% {
+    opacity: 1;
+ }
+  40% {
+    opacity: 1;
+ }
+  60% {
+    opacity: 0.1;
+ }
+  80% {
+    opacity: 0.1;
+ }
+  100% {
+    opacity: 0.1;
+ }
+}
+@keyframes ready {
+  0% {
+    opacity: 0.1;
+ }
+  20% {
+    opacity: 0.1;
+ }
+  40% {
+    opacity: 1;
+ }
+  50% {
+    opacity: 0.1;
+ }
+  60% {
+    opacity: 0.1;
+ }
+  80% {
+    opacity: 0.1;
+ }
+  86% {
+    opacity: 1;
+ }
+  100% {
+    opacity: 1;
+ }
+}
+@keyframes go {
+  0% {
+    opacity: 0.1;
+ }
+  40% {
+    opacity: 0.1;
+ }
+  60% {
+    opacity: 1;
+ }
+  80% {
+    opacity: 1;
+ }
+  83% {
+    opacity: 0.1;
+ }
+  100% {
+    opacity: 0.1;
+ }
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Nunito Sans', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+}
+.wow {
+  visibility: hidden;
+}
+.m-0-30, .ourServices .inner-ourServices, .superbOffers .inner-superb {
+  margin: 0 50px;
+}
+section {
+  width: 100%;
+  position: relative;
+}
+@media (min-width: 992px) {
+  .mobile-nav {
+    display: none;
+ }
+  .header.scrolled .mobile-nav {
+    display: none;
+ }
+}
+
+.superbOffers {
+  background: url("https://versa.ng/assets/images/investment-strategy.svg") no-repeat center;
+  background-size: cover;
+}
+.superbOffers .inner-superb .row {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row;
+}
+.superbOffers h3 {
+  padding: 1rem 0;
+  font-weight: bold;
+  color: #fff;
+  font-size: 2.1rem;
+  text-align: center;
+}
+.superbOffers .inner-superb .superb-container-home {
+  height: auto;
+  border-radius: 9px;
+  background: #fff;
+  margin: 1em;
+}
+.superbOffers .inner-superb .superb-container-home .img-holder {
+  height: 230px;
+  width: 100%;
+ /* background: #f7f7f7;
+  */
+  margin: auto;
+  padding: 16px;
+}
+.superbOffers .inner-superb .superb-container-home .img-holder img {
+  object-fit: cover;
+  width: inherit;
+  height: 100%;
+  margin-top: -3em;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 5px 12px rgba(79, 95, 190, .3);
+  -moz-box-shadow: 0px 5px 12px rgba(79, 95, 190, .3);
+  -o-box-shadow: 0px 5px 12px rgba(79, 95, 190, .3);
+  box-shadow: 0px 5px 12px rgba(79, 95, 190, .3);
+}
+.superbOffers .inner-superb .superb-container-home .content-holder {
+  padding: 0 15px;
+  text-align: left !important;
+  margin-top: -40px;
+}
+.superbOffers .inner-superb .superb-container-home .content-holder h2, .superbOffers .inner-superb .superb-container-home .content-holder a {
+  color: #4f5fbe;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.superbOffers .inner-superb .superb-container-home .content-holder h2:hover, .superbOffers .inner-superb .superb-container-home .content-holder a:hover {
+  text-decoration: none;
+}
+.superbOffers .inner-superb .superb-container-home .content-holder h3 a {
+  color: #4f5fbe;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 3px 0 10px;
+  position: relative;
+}
+.superbOffers .inner-superb .superb-container-home .content-holder h3 a:hover img {
+  -webkit-transition: ease all 0.5s;
+  -moz-transition: ease all 0.5s;
+  -ms-transition: ease all 0.5s;
+  -o-transition: ease all 0.5s;
+  transition: ease all 0.5s;
+  transform: translateX(10%);
+}
+.superbOffers .inner-superb .superb-container-home .content-holder .span-profit {
+  padding: 12px 0;
+  color: #555;
+  font-weight: lighter;
+  position: relative;
+}
+.superbOffers .inner-superb .superb-container-home .content-holder p {
+  margin-top: 0.51rem;
+  font-style: italic;
+  color: #888;
+}
+.superbOffers .inner-superb .superb-container-home.effect {
+  box-shadow: 5px 14px rgba(0, 0, 0, .2);
+  height: 500px;
+}
+.superbOffers .inner-superb .superb-container-home:hover {
+  box-shadow: 0 5px 14px rgba(0, 0, 0, .2);
+  -webkit-transition: ease all 0.7s;
+  -moz-transition: ease all 0.7s;
+  -ms-transition: ease all 0.7s;
+  -o-transition: ease all 0.7s;
+  transition: ease all 0.7s;
+  transform: translateY(-5px);
+}
+.superbOffers .down-offer-content {
+  margin: 4em 10px;
+}
+.superbOffers .down-offer-content h3 {
+  color: #fff;
+  padding-bottom: 2rem;
+  font-weight: bold;
+  line-height: 1.3;
+  font-size: 2rem;
+}
+.superbOffers .down-offer-content p {
+  font-weight: lighter;
+  font-size: 17px;
+  color: #f7f7f7;
+}
+.superbOffers .btn {
+  border-radius: 50px;
+  outline: 0;
+  border: none;
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
+  -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
+  -o-box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
+}
+.superbOffers .btn:hover {
+  transform: translateY(-5%);
+  box-shadow: 0 5px 14px rgba(0, 0, 0, .2);
+  -webkit-transition: ease all 0.7s;
+  -moz-transition: ease all 0.7s;
+  -ms-transition: ease all 0.7s;
+  -o-transition: ease all 0.7s;
+  transition: ease all 0.7s;
+}
+.superbOffers .btn-invest {
+  padding: 0.61em 2.3em;
+  width: 26%;
+  height: 45px;
+  background: #4f5fbe;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.superbOffers .btn-invest2 {
+  padding: 0.61em 2em !important;
+  height: 45px;
+  background: #4f5fbe;
+  color: #fff !important;
+  font-size: 1rem !important;
+  font-weight: lighter !important;
+}
+.superbOffers .btn-investment, .superbOffers .landing .inner-landing .get-started .btn-work-green, .landing .inner-landing .get-started .superbOffers .btn-work-green, .superbOffers .ourServices .get-started .btn-work-green, .ourServices .get-started .superbOffers .btn-work-green, .superbOffers .btn-work-green, .superbOffers .workingSection .inner-workingSection .working-content .btn-holder .btn-work-green, .workingSection .inner-workingSection .working-content .btn-holder .superbOffers .btn-work-green {
+  border-radius: 50px !important;
+  padding: 0.41em 1em;
+  background: #4f5fbe;
+  color: #fff;
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.superbOffers .btn-work-green {
+  background: #26e8ad;
+  color: #fff;
+}
+.superbOffers .btn-superb {
+  padding: 0.61em 2em;
+  background: #fff;
+  color: #4f5fbe;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.superbOffers .btn-sub-f {
+  background: #000;
+  color: #fff;
+}
+.superbOffers .view-more {
+  padding: 0 30px 0 0;
+  color: #4f5fbe;
+  font-weight: bold;
+  font-size: 1.2rem;
+  position: relative;
+}
+.superbOffers .view-more:after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  margin: auto;
+  height: 1px;
+  border-bottom: 2px solid #3f51b5;
+  bottom: -10px;
+  left: 0;
+}
+.superbOffers .view-more:hover {
+  text-decoration: none;
+}
+.superbOffers .view-more:hover img {
+  -webkit-transition: ease all 0.5s;
+  -moz-transition: ease all 0.5s;
+  -ms-transition: ease all 0.5s;
+  -o-transition: ease all 0.5s;
+  transition: ease all 0.5s;
+  transform: translateX(10%);
+}

@@ -1,0 +1,170 @@
+@keyframes stop {
+  0% {
+    opacity: 1;
+ }
+  20% {
+    opacity: 1;
+ }
+  40% {
+    opacity: 1;
+ }
+  60% {
+    opacity: 0.1;
+ }
+  80% {
+    opacity: 0.1;
+ }
+  100% {
+    opacity: 0.1;
+ }
+}
+@keyframes ready {
+  0% {
+    opacity: 0.1;
+ }
+  20% {
+    opacity: 0.1;
+ }
+  40% {
+    opacity: 1;
+ }
+  50% {
+    opacity: 0.1;
+ }
+  60% {
+    opacity: 0.1;
+ }
+  80% {
+    opacity: 0.1;
+ }
+  86% {
+    opacity: 1;
+ }
+  100% {
+    opacity: 1;
+ }
+}
+@keyframes go {
+  0% {
+    opacity: 0.1;
+ }
+  40% {
+    opacity: 0.1;
+ }
+  60% {
+    opacity: 1;
+ }
+  80% {
+    opacity: 1;
+ }
+  83% {
+    opacity: 0.1;
+ }
+  100% {
+    opacity: 0.1;
+ }
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Nunito Sans', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+}
+.wow {
+  visibility: hidden;
+}
+.m-0-30, .ourServices .inner-ourServices, .superbOffers .inner-superb {
+  margin: 0 50px;
+}
+/*section {
+  width: 100%;
+  position: relative;
+}*/
+@media (min-width: 992px) {
+  .mobile-nav {
+    display: none;
+ }
+  .header.scrolled .mobile-nav {
+    display: none;
+ }
+}
+
+.versa-plan {
+  background: #fff url("https://versa.ng/partner-row2-3.7f2485bd54afc0c25394.png") no-repeat right top;
+  height: 800rem;
+  padding-bottom: 1rem;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.versa-plan .inner-plan {
+  padding: 2rem 3rem;
+}
+.versa-plan .inner-plan h4 {
+  font-size: 2em;
+  font-weight: 500;
+  color: #4f5fbe;
+  margin-bottom: 1em;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.versa-plan .inner-plan .leftDisplay h3 {
+  font-size: 1.4rem;
+  line-height: 35px;
+  color: #707070;
+  font-weight: normal;
+  text-align: center;
+  font-family: 'Roboto';
+}
+.versa-plan .inner-plan ._3_steps {
+  text-align: center;
+}
+.versa-plan .inner-plan ._3_steps .card {
+  box-shadow: none !important;
+}
+.versa-plan .inner-plan ._3_steps .card:hover {
+ /*&:nth-child(2) {
+ }
+ */
+  -webkit-transition: ease all 0.26s;
+  -moz-transition: ease all 0.26s;
+  -ms-transition: ease all 0.26s;
+  -o-transition: ease all 0.26s;
+  transition: ease all 0.26s;
+  transform: translateY(-5px);
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, .1), 0 11px 6px -7px rgba(43, 43, 43, .1) !important;
+}
+.versa-plan .inner-plan ._3_steps .card-title {
+  color: #4f5fbe;
+  font-size: 1.3rem;
+}
+.versa-plan .inner-plan ._3_steps .card-text {
+  font-size: 16px !important;
+}
+.versa-plan .inner-plan ._3_steps .card-img-top {
+  width: 90px;
+  display: flex;
+  margin: 15px auto;
+}
+.versa-plan .side-display {
+  position: relative;
+  padding-top: 6em;
+}
+.versa-plan .side-display .dashboardShow {
+  /*background: url("../images/Sample.png") no-repeat;*/
+  background-size: contain;
+  border-radius: 5px;
+  height: 600%;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
