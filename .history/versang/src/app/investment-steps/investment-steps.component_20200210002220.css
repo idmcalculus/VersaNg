@@ -64,7 +64,7 @@
     opacity: 0.1;
  }
 }
-*, ::after, ::before {
+* {
   box-sizing: border-box;
 }
 a {
@@ -93,13 +93,6 @@ html, body {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
-}
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-  margin-bottom: .5rem;
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.2;
-  color: inherit;
 }
 section {
   width: 100%;
@@ -158,9 +151,14 @@ section {
   width: 100%;
   height: 30rem;
 }
+/*.step-investment .step-image img {
+  width: 100%;
+  object-position: center;
+  object-fit: contain;
+}*/
 .step-investment .list-plan {
   color: #fff;
-  margin-top: 5rem;
+  margin-top: 0;
 }
 .step-investment .list-plan h3 {
   color: #fff;
@@ -169,18 +167,14 @@ section {
   font-weight: bold;
 }
 .step-investment .list-plan h5 {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.2rem;
-}
-.step-investment .row .media .mt-0 {
-  margin-top: 0 !important;
 }
 .step-investment .list-plan .media-body {
   font-size: 1.2rem;
   font-weight: lighter;
   display: flex;
   flex-flow: column;
-  margin: .5rem .5rem .5rem 2rem;
 }
 .step-investment .list-plan span {
   color: #4f5fbe;

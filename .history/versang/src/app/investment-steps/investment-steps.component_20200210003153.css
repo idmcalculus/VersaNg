@@ -64,7 +64,7 @@
     opacity: 0.1;
  }
 }
-*, ::after, ::before {
+* {
   box-sizing: border-box;
 }
 a {
@@ -158,9 +158,14 @@ section {
   width: 100%;
   height: 30rem;
 }
+/*.step-investment .step-image img {
+  width: 100%;
+  object-position: center;
+  object-fit: contain;
+}*/
 .step-investment .list-plan {
   color: #fff;
-  margin-top: 5rem;
+  margin-top: 0;
 }
 .step-investment .list-plan h3 {
   color: #fff;

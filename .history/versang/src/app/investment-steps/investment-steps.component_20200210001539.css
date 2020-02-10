@@ -64,7 +64,7 @@
     opacity: 0.1;
  }
 }
-*, ::after, ::before {
+* {
   box-sizing: border-box;
 }
 a {
@@ -94,13 +94,6 @@ html, body {
   padding-right: 15px;
   padding-left: 15px;
 }
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-  margin-bottom: .5rem;
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.2;
-  color: inherit;
-}
 section {
   width: 100%;
   position: relative;
@@ -119,6 +112,7 @@ section {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
+    max-height: 50%;
 }
 }
 .row {
@@ -134,23 +128,20 @@ section {
   background: #4f5fbe;
   padding: 0 4rem 3em;
 }
+step-investment .row .col-md-6 {
+  height: 480px;
+}
 .step-investment .row .mt-5 {
   margin-top: 3rem!important;
 }
 .step-investment .row .media {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+  justify-content: space-between;
+  flex-flow: row;
+  align-items: center;
 }
 .step-investment .row .media .mr-3 {
   margin-right: 1rem!important;
-}
-.step-investment .row .media img {
-  vertical-align: middle;
-  border-style: none;
 }
 .step-investment .step-image {
   background: url("https://versa.ng/assets/images/presentation.png") no-repeat 8px 110%;
@@ -158,9 +149,14 @@ section {
   width: 100%;
   height: 30rem;
 }
+/*.step-investment .step-image img {
+  width: 100%;
+  object-position: center;
+  object-fit: contain;
+}*/
 .step-investment .list-plan {
   color: #fff;
-  margin-top: 5rem;
+  margin-top: 0;
 }
 .step-investment .list-plan h3 {
   color: #fff;
@@ -169,18 +165,14 @@ section {
   font-weight: bold;
 }
 .step-investment .list-plan h5 {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.2rem;
-}
-.step-investment .row .media .mt-0 {
-  margin-top: 0 !important;
 }
 .step-investment .list-plan .media-body {
   font-size: 1.2rem;
   font-weight: lighter;
   display: flex;
   flex-flow: column;
-  margin: .5rem .5rem .5rem 2rem;
 }
 .step-investment .list-plan span {
   color: #4f5fbe;

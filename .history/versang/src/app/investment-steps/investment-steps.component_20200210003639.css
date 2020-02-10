@@ -158,6 +158,11 @@ section {
   width: 100%;
   height: 30rem;
 }
+/*.step-investment .step-image img {
+  width: 100%;
+  object-position: center;
+  object-fit: contain;
+}*/
 .step-investment .list-plan {
   color: #fff;
   margin-top: 5rem;

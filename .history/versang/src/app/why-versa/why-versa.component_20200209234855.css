@@ -175,6 +175,8 @@ html, body {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
 }
 .versa-plan .inner-plan ._3_steps .card:hover {
   -webkit-transition: ease all 0.26s;

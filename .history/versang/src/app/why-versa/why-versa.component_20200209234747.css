@@ -77,11 +77,6 @@ html, body {
   overflow-x: hidden;
   font-family: 'Nunito Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
-  line-height: 1.15;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: transparent;
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
@@ -175,6 +170,8 @@ html, body {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
 }
 .versa-plan .inner-plan ._3_steps .card:hover {
   -webkit-transition: ease all 0.26s;

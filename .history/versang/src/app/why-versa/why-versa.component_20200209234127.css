@@ -71,18 +71,13 @@ a {
   color: inherit;
   text-decoration: none;
 }
-html, body {
+/*html, body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   font-family: 'Nunito Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
-  line-height: 1.15;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: transparent;
-}
+}*/
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
   font-family: inherit;
@@ -175,6 +170,8 @@ html, body {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
 }
 .versa-plan .inner-plan ._3_steps .card:hover {
   -webkit-transition: ease all 0.26s;
@@ -196,16 +193,7 @@ html, body {
   font-size: 1.3rem;
 }
 .versa-plan .inner-plan ._3_steps .card-text {
-  font-size: 16px!important;
-  line-height: 33px;
-  color: #707070;
-  font-weight: 400;
-  word-spacing: 5px;
-  text-align: center;
-  text-justify: initial;
-}
-.versa-plan .inner-plan ._3_steps .card-text:last-child {
-  margin-bottom: 0;
+  font-size: 16px !important;
 }
 .versa-plan .inner-plan ._3_steps .card-img-top {
   width: 90px;
