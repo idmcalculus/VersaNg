@@ -86,25 +86,22 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-flow: row nowrap;
-  -ms-flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
 }
 .superbOffers {
   background: url("https://versa.ng/assets/images/investment-strategy.svg") no-repeat center;
   background-size: cover;
-  padding: 0 0 40px;
 }
 .superbOffers h3 {
   font-size: 1.6rem;
-  padding: 2rem 0 2rem 0 !important;
+  padding: 10px 0;
   color: #4f5fbe;
+  padding: 1rem 0;
   font-weight: bold;
   text-align: center;
-}
-.superbOffers .inner-superb {
-  margin: 0 20px;
 }
 .superbOffers .inner-superb .superb-container-home {
   height: 100%;

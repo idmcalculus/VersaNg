@@ -85,9 +85,9 @@ section {
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  flex-flow: row nowrap;
-  -ms-flex-wrap: nowrap;
+  display: flex wrap;
+  flex-flow: row;
+  -ms-flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
 }

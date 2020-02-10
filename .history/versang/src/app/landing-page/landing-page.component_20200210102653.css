@@ -26,25 +26,6 @@ body {
   transform: translateZ(0);
 }
 }
-@keyframes slideInLeft {
-  0% {
-    -webkit-transform: translate3d(-100%,0,0);
-    transform: translate3d(-100%,0,0);
-    visibility: visible;
-}
-100% {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-}
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-}
-100% {
-    opacity: 1;
-}
-}
 a {
   color: inherit;
   text-decoration: none;
@@ -71,6 +52,16 @@ section {
   .header.scrolled .mobile-nav {
     display: none;
  }
+}
+.land-overlay {
+  position: absolute;
+  opacity: 0.3;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  content: "";
+  background: #000;
 }
 .landing {
   background: #fff;
@@ -106,13 +97,11 @@ section {
 .landing .inner-landing .lower-content {
   margin-top: 2em;
   color: #707070;
+  font-size: 1rem;
+  line-height: 35px;
   word-break: break-all;
   font-weight: lighter;
   padding: 0;
-  font-size: 1.1rem!important;
-  line-height: 42px!important;
-  letter-spacing: 1.2px;
-  text-align: justify;
 }
 .landing .inner-landing .get-started {
   margin-top: 4em;
@@ -153,6 +142,31 @@ section {
   font-size: 1rem !important;
   font-weight: lighter !important;
 }
+.landing .inner-landing .get-started .btn-investment, .landing .inner-landing .get-started .btn-work-green, .landing .inner-landing .get-started .ourServices .get-started .btn-work-green, .ourServices .get-started .landing .inner-landing .get-started .btn-work-green, .landing .inner-landing .get-started .superbOffers .btn-work-green, .superbOffers .landing .inner-landing .get-started .btn-work-green, .landing .inner-landing .get-started .workingSection .inner-workingSection .working-content .btn-holder .btn-work-green, .workingSection .inner-workingSection .working-content .btn-holder .landing .inner-landing .get-started .btn-work-green {
+  border-radius: 50px !important;
+  padding: 0.41em 1em;
+  background: #4f5fbe;
+  color: #fff;
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.landing .inner-landing .get-started .btn-work-green {
+  background: #26e8ad;
+  color: #fff;
+}
+.landing .inner-landing .get-started .btn-superb {
+  padding: 0.61em 2em;
+  background: #fff;
+  color: #4f5fbe;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.landing .inner-landing .get-started .btn-sub-f {
+  background: #000;
+  color: #fff;
+}
 .landing .inner-landing .row .circle {
   width: 60%;
   height: 100%;
@@ -183,5 +197,18 @@ section {
   -o-transition: ease all 0.5s;
   transition: ease all 0.5s;
 }
-
+.section-container {
+  padding: 10px 20px 0;
+  background: rgba(5, 3, 51, .3);
+}
+.title-head {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+  text-transform: capitalize;
+}
+.f-13 {
+  font-size: 1em !important;
+}
 
